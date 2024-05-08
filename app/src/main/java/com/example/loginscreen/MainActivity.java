@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(username.getText().toString().equals("htetaungkyaw@gmail.com") &&  password.getText().toString().equals("12345")){
                     Toast.makeText(MainActivity.this, "Login Successful!",Toast.LENGTH_SHORT).show();
-                    Intent intent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://developer.android.com/studio?gclid=CjwKCAjw-IWkBhBTEiwA2exyOyX4m9WXpHw2Bs2hElz7GOm47MFWt2maurlG2r252f4MUQFKSAxhuhoCaeUQAvD_BwE&gclsrc=aw.ds"));
+                    Intent intent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://developer.android.com/studio?gad_source=1&gclid=Cj0KCQjwxeyxBhC7ARIsAC7dS3-N1K3Ya1bkp9l8F1yVcek4geiN1-txWo0zx2L1UgRUP5kfTABYt80aAly1EALw_wcB&gclsrc=aw.ds"));
                     startActivity(intent);
                 } else {
                     Toast.makeText(MainActivity.this, "Login Failed!", Toast.LENGTH_SHORT).show();
