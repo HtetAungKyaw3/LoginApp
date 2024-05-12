@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="8dp"
+    android:padding="3dp"
+    android:backgroundTint="@color/black"
+    android:layout_marginHorizontal="10dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/view_bg_color"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dice_1"
+        />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imageView"
+        android:singleLine="true"/>
+
+
+        <TextView
+            android:id="@+id/aboutDice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/nameView"
+            android:layout_toRightOf="@id/imageView"
+            android:singleLine="true"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
