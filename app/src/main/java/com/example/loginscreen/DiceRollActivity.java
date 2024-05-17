@@ -16,9 +16,13 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.Random;
 
 public class DiceRollActivity extends AppCompatActivity {
+
+    DiceRollActivity binding;
     TextView scoreTxt;
     ImageView diceImage;
     Button btnRoll, btnChoose;
+
+    ImageView arrow_left_ic;
 
 
     @Override
@@ -35,12 +39,20 @@ public class DiceRollActivity extends AppCompatActivity {
         diceImage = findViewById(R.id.diceImage);
         btnRoll = findViewById(R.id.btnRoll);
         btnChoose =findViewById(R.id.btnChoose);
+        arrow_left_ic = findViewById(R.id.arrow_left_ic);
 
         btnChoose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DiceRollActivity.this,SecondActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        arrow_left_ic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
             }
         });
 

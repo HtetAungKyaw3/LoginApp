@@ -52,16 +52,37 @@
                 android:textStyle="bold"
                 android:textColor="@color/purple"/>
 
-            <EditText
-                android:id="@+id/username"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPasswordLayout1"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:drawableLeft="@drawable/baseline_person_24"
-                android:background="@drawable/custom_edittext"
-                android:padding="10dp"
-                android:hint="User"
-                android:textColor="@color/black"
-                android:layout_marginTop="20dp"/>
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="5sp">
+
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/baseline_person_24"
+
+                    android:padding="10dp"
+                    android:hint="User"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <EditText-->
+<!--                android:id="@+id/username"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:drawableLeft="@drawable/baseline_person_24"-->
+<!--                android:background="@drawable/custom_edittext"-->
+<!--                android:padding="10dp"-->
+<!--                android:hint="User"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_marginTop="20dp"/>-->
 
 <!--            <com.google.android.material.textfield.TextInputLayout-->
 <!--                android:layout_width="match_parent"-->
@@ -85,17 +106,36 @@
 <!--                </com.google.android.material.textfield.TextInputEditText>-->
 <!--            </com.google.android.material.textfield.TextInputLayout>-->
 
-            <EditText
-                android:id="@+id/password"
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPasswordLayout"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:drawableLeft="@drawable/baseline_lock_24"
-                android:background="@drawable/custom_edittext"
-                android:padding="10dp"
-                android:inputType="textFilter|textNoSuggestions"
-                android:hint="Password"
-                android:textColor="@color/black"
-                android:layout_marginTop="10dp"/>
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="5sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:hint="Enter password"
+                    android:padding="10dp"
+                    android:textColorHint="#5B3F3D3D"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <EditText-->
+<!--                android:id="@+id/password"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:drawableLeft="@drawable/baseline_lock_24"-->
+<!--                android:background="@drawable/custom_edittext"-->
+<!--                android:padding="10dp"-->
+<!--                android:inputType="textFilter|textNoSuggestions"-->
+<!--                android:hint="Password"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_marginTop="10dp"/>-->
 
             <Button
                 android:id="@+id/loginButton"

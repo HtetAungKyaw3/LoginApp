@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+
     private EditText username;
     private EditText password;
     private Button loginButton;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         username = findViewById(R.id.username);
-        password = findViewById(R.id.password);
+        password = findViewById(R.id.etPassword);
         loginButton = findViewById(R.id.loginButton);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 if(username.getText().toString().equals("htetaungkyaw@gmail.com") &&  password.getText().toString().equals("12345")){
                     Toast.makeText(MainActivity.this, "Login Successful!",Toast.LENGTH_SHORT).show();
 //                    Intent intent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://developer.android.com/studio?gad_source=1&gclid=Cj0KCQjwxeyxBhC7ARIsAC7dS3-N1K3Ya1bkp9l8F1yVcek4geiN1-txWo0zx2L1UgRUP5kfTABYt80aAly1EALw_wcB&gclsrc=aw.ds"));
-                    Intent intent = new Intent(MainActivity.this,DiceRollActivity.class);
+                    Intent intent = new Intent(MainActivity.this,ProjectActivity.class);
                     startActivity(intent);
                 } else {
                     Toast.makeText(MainActivity.this, "Login Failed!", Toast.LENGTH_SHORT).show();

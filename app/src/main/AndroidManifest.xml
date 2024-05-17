@@ -13,20 +13,33 @@
         android:theme="@style/Theme.LoginScreen"
         tools:targetApi="31">
         <activity
-            android:name=".SecondActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DiceRollActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="com.example.action.APP_ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".FontConverter"
+            android:exported="false" />
+         <activity
+         android:name=".GuessWordActivity"
+         android:exported="false" />
+        <activity
+            android:name=".ProjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DiceRollActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
